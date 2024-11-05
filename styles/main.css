@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -25,4 +26,42 @@ nav a {
 nav a.selected {
     background-color: green;
     color: gold;
+}
+
+/* Center images in #home-nav */
+#home-nav {
+    display: flex;
+    justify-content: center; /* Centers items horizontally */
+    gap: 20px; /* Adds spacing between images */
+    text-align: center;
+    padding: 20px; /* Adds some padding around */
+}
+
+#home-nav a {
+    display: flex;
+    flex-direction: column; /* Stack the image and title vertically */
+    align-items: center; /* Center-aligns content inside each link */
+    text-decoration: none;
+    color: inherit;
+}
+
+#home-nav img {
+    display: block;
+    max-width: 500px; /* Limits image size for consistency */
+    border-radius: 8px; /* Optional: adds rounded corners */
+    margin-bottom: 8px; /* Adds space between image and title */
+}
+
+h1 {
+ font-size: 80px;
+ color: lightskyblue;
+}
+
+h2 {
+    font-size: 30px;
+    color:saddlebrown
+}
+
+.btn{
+    position: absolute;
 }
