@@ -1,0 +1,9 @@
+
+select {
+    width: 70%;
+    padding: 0.25rem;
+    font-size: medium;
+    display: block; 
+    margin: 1rem auto; 
+    text-align: center;
+}

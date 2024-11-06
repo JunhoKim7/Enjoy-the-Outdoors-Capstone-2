@@ -8,27 +8,35 @@ body {
     background-color: bisque;
     color: rgb(54, 64, 38);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
 }
 
 nav {
-    background-color: black;
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+    padding: 1rem; 
 }
 
 nav a {
     display: inline-block;
-    background-color: saddlebrown;
+    background-color: brown;
     color: gold;
-    margin-right: 1px;
+    margin-bottom: 1rem;
+    margin: 10px;
+    width: 15vw;
     padding: 0.5rem;
+    text-align: center;
     text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
 }
 
 nav a.selected {
-    background-color: green;
+    background-color: lightskyblue;
     color: gold;
 }
 
-/* Center images in #home-nav */
 #home-nav {
     display: flex;
     justify-content: center; /* Centers items horizontally */
@@ -55,13 +63,28 @@ nav a.selected {
 h1 {
  font-size: 80px;
  color: lightskyblue;
+ text-align: center;
 }
 
 h2 {
     font-size: 30px;
-    color:saddlebrown
+    color:rgba(255, 255, 255, 0.682);
+    text-align: center;
 }
 
 .btn{
     position: absolute;
 }
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: .5rem;
+    background-color: bisque;
+}
+
+
+

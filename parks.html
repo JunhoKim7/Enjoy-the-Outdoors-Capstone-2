@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parks</title>
     <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/parks.css">
     <script src="./scripts/main.js"></script>
     <script src="./data/scripts/nationalParkData.js"></script>
     <script src="./data/scripts/parkTypeData.js"></script>
@@ -19,11 +20,12 @@
         <h1>Parks</h1>
         <div class="filters">
             <select name="parkTypeSelect" id="parkTypeSelect">
-                <option value="">Select a park type...</option>
+                <option value="">Select a Park Type...</option>
             </select>
             <select name="parkLocationSelect" id="parkLocationSelect">
-                <option value="">Select a park Location</option>
-            </select>
+                <option value="">Select a Park Location</option>
+            </select> 
+        
             <button id="filterButton">Filter</button>
         </div>
         <div id="results"></div>
