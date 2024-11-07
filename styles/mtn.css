@@ -7,3 +7,7 @@ select {
     margin: 1rem auto; 
     text-align: center;
 }
+
+#results {
+    text-align: center;
+}
