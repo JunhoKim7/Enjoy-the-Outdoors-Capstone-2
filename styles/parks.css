@@ -21,4 +21,29 @@ pre{
     text-align: left;
 }
 
+.results-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.results-table th, .results-table td {
+    padding: 0.5rem;
+    text-align: left;
+    border: 1px solid brown;
+}
+
+.results-table th {
+    background-color: saddlebrown;
+    font-weight: bold;
+    color: azure;
+}
+
+.results-table tbody tr {
+    background-color: lightskyblue;
+}
+
+.results-table tbody tr:hover {
+    background-color: goldenrod;
+}
 
