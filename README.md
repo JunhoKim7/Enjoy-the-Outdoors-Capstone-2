@@ -1,6 +1,6 @@
 # Enjoy the Outdoors - Capstone Project
 
-Welcome to **Enjoy the Outdoors**! This capstone project is an exploration into frontend development, allowing users to discover parks and mountains to enjoy the beauty of nature. Built with HTML, CSS, and JavaScript, this project showcases skills learned through my frontend coding journey and serves as a helpful tool for adventure-seekers looking to explore national parks and mountain destinations.
+Welcome to **Enjoy the Outdoors**! This is my second capstone project which showcases my added experience and expertise into frontend development. It is a site that allows users to discover national parks and mountains to enjoy the beauty of nature. Built with HTML, CSS, and JavaScript, this project is the culmination of all the skills learned through my frontend coding journey and serves as a helpful tool for adventure-seekers looking to explore beautiful natural and historical destinations.
 
 ## 🛠️ Tools & Technologies
 
@@ -28,14 +28,20 @@ Alternatively, you can visit the live site [here](https://junhokim7.github.io/En
 ## 🌐 Website Previews
 
 ### Homepage
-![Homepage Preview](screenshots/homepage.png)
-k\           
+![Homepage Preview](pics/home1.png)
+![Homepage Preview](pics/home2.png)
+
 ### Parks Page
-![Parks Page Preview](screenshots/parks.png)
+![Parks Page Preview](pics/park1.png)
+![Parks Page Preview](pics/park2.png)
 
 ### Mountains Page
-![Mountains Page Preview](screenshots/mountains.png)
-  ###                                                                                                                               
+![Mountains Page Preview](pics/mtnscreenshot.png)
+
+### About Us Page
+![About Us Page Preview](pics/aboutus.png)
+![About Us Page Preview](pics/contactus.png)
+
 ## 🏗️ Project Structure
 
 ```bash
