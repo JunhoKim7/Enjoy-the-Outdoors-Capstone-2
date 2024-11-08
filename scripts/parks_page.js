@@ -26,7 +26,7 @@ function renderParks() {
     const results = document.getElementById("results");
     const selectedType = document.getElementById("parkTypeSelect").value;
     const selectedLocation = document.getElementById("parkLocationSelect").value;
-    results.innerHTML = ""; // Clear previous results
+    results.innerHTML = ""; 
 
     let filtered = nationalParksArray;
     if (selectedType) {
@@ -36,7 +36,6 @@ function renderParks() {
         filtered = filtered.filter(p => p.State.toLowerCase() === selectedLocation.toLowerCase());
     }
 
-    // If there are results, display them in a table
     if (filtered.length > 0) {
         const table = document.createElement("table");
         table.classList.add("results-table");

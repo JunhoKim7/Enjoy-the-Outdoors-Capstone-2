@@ -2,20 +2,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const results = document.getElementById("results");
     const mountainsSelect = document.getElementById("mountainsSelect");
 
-    // Populate the dropdown with mountain options
+    
     mountainsArray.forEach(m => mountainsSelect.appendChild(new Option(m.name)));
-
     mountainsSelect.addEventListener("change", async () => {
         const selectedIndex = mountainsSelect.selectedIndex;
-
-        // Clear previous content
         results.innerHTML = "";
 
-        // If a valid selection is made
         if (selectedIndex) {
             const m = mountainsArray[selectedIndex - 1];
-
-            // Display mountain details
             const coords = m.coords.lat.toFixed(3) + ", " + m.coords.lng.toFixed(3);
             results.innerHTML = `
                 <h1>${m.name}</h1>                
@@ -25,13 +19,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 ${m.desc}<br><br>
             `;
 
-            // Create and append the "Show Times" button
+        
             const sunbtn = document.createElement("button");
             sunbtn.innerHTML = "Show Times";
             sunbtn.style.marginTop = "10px";
             results.appendChild(sunbtn);
-
-            // Add mountain image if available
             if (m.img) {
                 const img = document.createElement("img");
                 img.alt = "Mountain Image";
@@ -59,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 `https://api.sunrise-sunset.org/json?lat=${lat}&lng=${lng}&date=today`
             );
             const data = await response.json();
-            return data.results; // Only return the 'results' part
+            return data.results; 
         } catch (error) {
             console.error("Error fetching sunrise/sunset data:", error);
             return null;
