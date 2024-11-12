@@ -25,6 +25,8 @@ body{
 
 #explorelogo{
     background: none;
+    border-radius: 50%;
+    
 }
 
 .carousel-item img {

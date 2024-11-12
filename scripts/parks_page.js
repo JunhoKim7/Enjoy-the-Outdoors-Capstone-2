@@ -26,6 +26,7 @@ function renderParks() {
     const results = document.getElementById("results");
     const selectedType = document.getElementById("parkTypeSelect").value;
     const selectedLocation = document.getElementById("parkLocationSelect").value;
+    const searchTerm = document.getElementById("searchInput").value.toLowerCase();
     results.innerHTML = ""; 
 
     let filtered = nationalParksArray;
@@ -34,6 +35,9 @@ function renderParks() {
     }
     if (selectedLocation) {
         filtered = filtered.filter(p => p.State.toLowerCase() === selectedLocation.toLowerCase());
+    }
+    if (searchTerm) {
+        filtered = filtered.filter(p => p.LocationName.toLowerCase().includes(searchTerm));
     }
 
     if (filtered.length > 0) {
@@ -70,11 +74,16 @@ function onContent() {
     const parkTypeSelect = document.getElementById("parkTypeSelect");
     const parkLocationSelect = document.getElementById("parkLocationSelect");
     const results = document.getElementById("results");
+    const filterButton = document.getElementById("filterButton");
+    const searchInput = document.getElementById("searchInput");
+
     parkTypesArray.forEach(parkTypeName => addPark(parkTypeName, parkTypeSelect));
-    locationsArray.forEach(parkLocationName => addLocation(parkLocationName, parkLocationSelect))
+    locationsArray.forEach(parkLocationName => addLocation(parkLocationName, parkLocationSelect));
+
     filterButton.addEventListener("click", renderParks);
     parkTypeSelect.addEventListener("change", renderParks);
     parkLocationSelect.addEventListener("change", renderParks);
+    searchInput.addEventListener("input", renderParks); 
 }
 
 document.addEventListener("DOMContentLoaded", onContent);
